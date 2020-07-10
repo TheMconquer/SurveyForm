@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konka Web Designs | Survey form</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta name="description" content="Mconquer Web Designs Survey Form">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+   <body>
+       <div class="main">
+           <h1 id="title">Konka Web Designs Survey Form</h1>
+           <p id="description">Thank you for taking the time to help us improve the company services.</p>
+       </div>
+      
+        <form id="survey-form" action="/action_page.php" >
+           <div class="form-group ">
+                <label for="Name"id="name-label" >Name:</label><br>
+                <input type="text" id="name" placeholder="Name" class="form-control"required>
+           </div>
+
+           <div class="form-group ">
+            <label for="Email"id="email-label" >Email:</label><br>
+            <input type="email" id="email" placeholder="Email" class="form-control"required>
+           </div>
+
+           <div class="form-group ">
+            <label for="Phone"id="phone-label" >Phone Number:</label><br>
+            <input type="tel" id="phone" placeholder="###-###-####" class="form-control" name="phone"  pattern="[1-9]{3}-[1-9]{3}-[1-9]{4}">
+           </div>
+
+            <div class="form-group"> 
+                <label for="Services Provided">Services Provided:</label><br>
+                <input type="text" placeholder="Services Provided" class="form-control">
+            </div>
+
+           <div class="form-group ">
+            <label for="How did you hear about us?">How did you hear about us?:</label>
+            <input list="dropdown" name="dropdown" class="form-control" placeholder="Select an option">
+            <datalist id="dropdown">
+             <option value="Website">
+             <option value="Social Media">
+             <option value="Advert">
+             <option value="Colleague/Relative/Friend">
+             <option value="Flyer">
+            </datalist>
+           </div>
+
+           <div class="form-group ">
+            <p>Would you recommend Mconquer Web Designs to a friend?</p>
+            <input type="radio" id="definately" name="answer" value="definately">
+            <label for="definately">Definately</label><br>
+            <input type="radio" id="maybe" name="answer" value="maybe" >
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" id="not-sure" name="answer" value="not-sure">
+            <label for="not-sure">Not sure</label>
+           </div>
+
+           <div class="form-group ">
+            <label for="Did the end result of the design meet your expectations?">Did the end result of the design meet your expectations?:</label><br>
+            <input list="dropdown" name="dropdown" class="form-control" placeholder="Select an option">
+            <datalist id="dropdown">
+             <option value="Above and Beyond">
+             <option value="Definately">
+             <option value="To somewhat extent">
+             <option value="Not at all">
+            </datalist>
+           </div>
+
+           <div class="form-group ">
+            <p>What would you like to see improved?</p><em><small>(Check all that apply)</small></em><br>
+            <input type="checkbox" id="web-design" name="answer1" value="web-design">
+            <label for="web-design">Web Design</label><br>
+            <input type="checkbox" id="pages-loading-speed" name="answer2" value="pages-loading-speed">
+            <label for="pages-loading-speed">Pages loading speed</label><br>
+            <input type="checkbox" id="web-visualization" name="answer3" value="web-visualization">
+            <label for="web-visualization">Web Visualization</label><br>
+            <input type="checkbox" id="communication" name="answer4" value="communication">
+            <label for="communication">Communication</label>
+           </div>
+
+           <div class="form-group ">
+            <p>Any additional comments or suggestions?</p>
+            <textarea name="comments-suggestions" id="comments-suggestions" cols="30" rows="10" placeholder="Enter any comment here." class="input-textarea"></textarea>
+           </div>
+
+           <div class="form-group">
+            <input type="submit" class="submit-button"> 
+           </div>
+           
+           
+         
+        </form>
+   </body>
+</html>
